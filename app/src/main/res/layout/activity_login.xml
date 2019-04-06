@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainContainer"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".activities.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"/>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical"
+                android:padding="10dip">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/edtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@color/colorPrimary"
+                        android:hint="Mobile Number"
+                        android:maxLength="10"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </RelativeLayout>
+                <!--  Password Label -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionNext"
+                        android:hint="Password"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtForgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" forgot password"
+                    android:imeOptions="actionNext"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    tools:ignore="RtlCompat" />
+
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="Login"
+                    android:id="@+id/btnLogin"
+                    android:textColor="@color/colorPrimary"
+                    android:imeOptions="actionDone"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    livebutton:corners="4dp"
+                    livebutton:normalHeight="6dp"
+                    livebutton:pressedHeight="2dp"
+                    livebutton:backgroundColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/txtRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>

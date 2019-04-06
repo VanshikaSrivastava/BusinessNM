@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28caba</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#838383</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrey1">#eeeeee</color>
+
+
+
+
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_60">#99000000</color>
+
+    <color name="black_87">#DE000000</color>
+
+    <color name="text_black_primary">@color/black_87</color>
+
+    <color name="text_white_primary">@color/colorWhite</color>
+</resources>

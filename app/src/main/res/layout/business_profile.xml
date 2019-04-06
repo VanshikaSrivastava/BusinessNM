@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_marginTop="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Name"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Business Title"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtBusinessTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Business Category"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/txtBusinessCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="Tap to Select"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Place"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Number"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Whatsapp Number"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserWhatsappNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Email Id"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Website"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtUserWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:text="https://www."
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="About Business"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:text="How many years you have been doing this business ?"
+            android:textColor="@color/colorBlack"
+                android:layout_marginLeft="4dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/edtback"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edtBusinessYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="start" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/crdButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:weightSum="2" >
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btnCancel"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                livebutton:backgroundColor="@color/colorPrimary"
+                livebutton:corners="4dp"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                livebutton:shadowColor="@color/colorWhite"
+                android:layout_marginLeft="10dp" />
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btnSave"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="SAVE"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                livebutton:backgroundColor="@color/colorPrimary"
+                livebutton:corners="4dp"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                livebutton:shadowColor="@color/colorWhite"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

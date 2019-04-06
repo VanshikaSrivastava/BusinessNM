@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowFullscreen="true"
+    android:gravity="center"
+    tools:context=".activities.Splash">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="169dp"
+        android:layout_height="173dp"
+        app:srcCompat="@drawable/splash" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/business_network_management"
+        android:textColor="@color/black_87"
+        android:textStyle="bold"
+
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        />
+
+
+</LinearLayout>

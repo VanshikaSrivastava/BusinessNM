@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLyt"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text=" Search"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtback"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/edtSearchEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorWhite"
+                android:hint="Select"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btnCancel1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                livebutton:backgroundColor="@color/colorPrimary"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp" />
+
+            <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:text="Search"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                livebutton:backgroundColor="@color/colorPrimary"
+                livebutton:normalHeight="6dp"
+                livebutton:pressedHeight="2dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

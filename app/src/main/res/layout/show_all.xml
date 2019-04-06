@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainer"
+    android:orientation="vertical"
+    tools:context=".activities.ShowAll" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/edtback"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/edtTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:hint="Search by Categories"
+            android:padding="3dp"
+            android:drawableRight="@drawable/icon_search"
+            android:textColor="@color/colorBlack" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/mobile_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        >
+    </ListView>
+
+</RelativeLayout>

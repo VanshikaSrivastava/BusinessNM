@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_business_profile"
+            android:icon="@drawable/icon_user_profile"
+            android:title="My Business Profile" />
+
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/icon_post"
+            android:title="Post" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_rateus"
+            android:icon="@drawable/icon_rate_us"
+            android:title="Rate Us" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+</menu>
